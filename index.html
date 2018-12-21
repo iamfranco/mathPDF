@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>math PDF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+<textarea name="name" autocomplete="off" rows="8" cols="80" id="blueprint">
+Shift(-15,0)
+
+Columns(4)
+Multiplication(2,2).repeat(8)
+
+Answers()
+</textarea>
+
+    <div class="btn btn--wide" id="btn--bottomLeft" onclick="bottomLeft_btn();">Update PDF (Tab ⇥)</div>
+
+    <iframe id="preview-pane" type="application/pdf"></iframe>
+    <div class="btn btn--wide" id="btn--bottomRight" onclick="download_output();">Download PDF</div>
+  </body>
+  <script src="helper.js"></script>
+  <script src="draw_pdf_elements.js"></script>
+  <script src="main.js"></script>
+</html>

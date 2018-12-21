@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+#blueprint {
+  padding: 0 10px;
+  width: calc(50vw - 20px);
+  height: calc(100vh - 40px);
+  background: #f9f7f7;
+  color: #07689f;
+  position: fixed;
+  border: none;
+  resize: none;
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 30px;
+}
+
+#blueprint:focus {
+  outline: none;
+}
+#blueprint::-moz-selection { background: #555; color: #fff}
+#blueprint::selection { background: #555; color: #fff}
+
+#preview-pane {
+  background: #fff;
+  width: 50vw;
+  border: 0;
+  height: calc(100vh - 38px);
+  position: fixed;
+  right: 0;
+  top: -2px;
+  transition: all 0.2s ease;
+}
+
+.btn--wide {
+  position: fixed;
+  width: 50vw;
+  padding: 10px 0;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.btn--wide:hover {
+  opacity: 1;
+}
+
+#btn--bottomLeft {
+  left: 0;
+  bottom: 0;
+  background: #07689f;
+  color: #fff;
+}
+
+#btn--bottomRight {
+  right: 0;
+  bottom: 0;
+  background: #f64662;
+  color: #fff;
+}
