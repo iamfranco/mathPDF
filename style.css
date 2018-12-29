@@ -59,6 +59,19 @@ body {
   opacity: 1;
 }
 
+#btn--github {
+  position: fixed;
+  right: 50vw;
+  padding: 8px 15px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  text-decoration: none;
+}
+
+#btn--github:hover {
+  background: rgba(0,0,0,0.8);
+}
+
 #btn--bottomLeft {
   left: 0;
   bottom: 0;
