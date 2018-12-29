@@ -2,46 +2,52 @@
 
 This is a PDF generation tool that writes specific maths questions to the PDF, based on the user's commands.
 
----
 ## Commands
 
-### `Columns(n)`
+#### `Columns(n)`
 Rearrange the succeeding contents into `n` columns.
 <br>Example: `Columns(4)`.
+<br><br>
 
-### `Hline()`
+#### `Hline()`
 Draw a horizontal line.
+<br><br>
 
-### `Gap(n)`
+#### `Gap(n)`
 Insert vertical gap of `n` millimetres.
 <br>Example: `Gap(10)`.
+<br><br>
 
-### `Shift(x,y)`
+#### `Shift(x,y)`
 Shift the succeeding contents by `x` millimetres horizontally, and by `y` millimetres vertically.
 <br>Example: `Shift(-15,0)`.
+<br><br>
 
-### `Answers()`
+#### `Answers()`
 Insert the answers page.
+<br><br>
 
-### `Addition(d1, d2)`
+#### `Addition(d1, d2)`
 Randomly generates two numbers, where the first number has `d1` digits, the second number has `d2` digits.
 <br>Then draw the maths question onto the PDF asking for the **sum** of the two numbers.
 <br>Example: `Addition(3,2)`.
+<br><br>
 
-### `Subtraction(d1, d2)`
+#### `Subtraction(d1, d2)`
 Randomly generates two numbers, where the first number has `d1` digits, the second number has `d2` digits.
 <br>Then draw the maths question onto the PDF asking for the **difference** of the two numbers.
 <br>Example: `Subtraction(3,2)`.
+<br><br>
 
-### `Multiplication(d1, d2)`
+#### `Multiplication(d1, d2)`
 Randomly generates two numbers, where the first number has `d1` digits, the second number has `d2` digits.
 <br>Then draw the maths question onto the PDF asking for the **product** of the two numbers.
 <br>Example: `Multiplication(3,2)`.
+<br><br>
 
----
 ## Modifiers
 
-### `.repeat(n)`
+#### `.repeat(n)`
 Apply the `.repeat(n)` modifier to a command will repeat the command `n` times.
 <br>Example: `Multiplication(2,2).repeat(8)` is the same as
 ```
@@ -54,3 +60,4 @@ Multiplication(2,2)
 Multiplication(2,2)
 Multiplication(2,2)
 ```
+<br><br>
